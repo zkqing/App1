@@ -1,0 +1,44 @@
+/* Empty. Add your own CSS if you like */
+
+/*CSS修改main9的range-positive的样式*/
+/*.range.range-positive input::-webkit-slider-thumb:before {
+    background:rebeccapurple; }
+.range.range-positive input::-ms-fill-lower {
+    background: rebeccapurple; }*/
+
+
+/*CSS修改main10的的样式*/
+ /*.col{
+    background: red;
+    margin-top: 10px;
+    border: 1px solid white;
+  }
+  .col-offset-16{
+      margin-left: 16.6%;
+  }*/
+
+  /*main16*/
+  /*.box{
+     height: 91vh;
+  }
+  .blue{
+      background: blue;
+  }
+  .yellow{
+      background: yellow;
+  }
+  .pink{
+      background: pink;
+  }*/
+
+  /*main17*/
+ /*.modal{
+      background: red;
+  }*/
+
+/*main23*/
+
+/*zepto26*/
+.delete { 
+    display: none; 
+    }

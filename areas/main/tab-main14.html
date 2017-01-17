@@ -1,0 +1,40 @@
+<ion-view hide-nav-bar='true'>
+
+  <ion-content scroll='true'>
+
+    <!--shouldShowDelete默认为false关闭状态-->
+    <ion-toggle ng-model="shouldShowDelete">
+      显示删除?
+    </ion-toggle>
+    <!--shouldShowDelete默认为false关闭状态-->
+    <ion-list show-delete="shouldShowDelete">
+      <ion-item>
+        <ion-delete-button class="ion-minus-circled"></ion-delete-button>
+        Hello, 列表项!
+      </ion-item>
+    </ion-list>
+
+
+    <!--列表调换排序-->
+    <ion-list show-reorder="true">
+      <!-- track by $index忽略重复 -->
+      <ion-item ng-repeat="item in items2 track by $index">
+        Item {{ item }}
+        <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)">
+        </ion-reorder-button>
+      </ion-item>
+    </ion-list>
+
+    <!--滑动-->
+    <ion-list>
+      <ion-item>
+        我喜欢小猫!
+        <ion-option-button class="button-positive">分享</ion-option-button>
+        <ion-option-button class="button-assertive">编辑</ion-option-button>
+      </ion-item>
+    </ion-list>
+
+
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,28 @@
+<ion-view hide-nav-bar='true'>
+
+
+    <ion-content scroll='true'>
+
+        <!--下拉刷新-->
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()">
+        </ion-refresher>
+
+        <!--列表-->
+        <ion-list>
+            <ion-item ng-repeat="item in items">
+                Hello, {{item}}!
+            </ion-item>
+        </ion-list>
+
+        <!--上拉刷新-->
+        <ion-infinite-scroll on-infinite="loadMore()" distance="20%">
+        </ion-infinite-scroll>
+
+        <!--当没有更多的加载数据的时候阻止无限滚动-->
+        <ion-infinite-scroll ng-if="moreDataCanBeLoaded()" icon="ion-loading-c" on-infinite="loadMoreData()">
+        </ion-infinite-scroll>
+
+
+    </ion-content>
+
+</ion-view>

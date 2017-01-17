@@ -1,0 +1,41 @@
+<ion-view hide-nav-bar='true'>
+
+  <!--滑动块 scroll为false-->
+  <ion-content scroll="false">
+    <!--does-continue="true"类似于loop循环-->
+  <ion-slide-box  active-slide="myActiveSlide"  auto-play="true" does-continue="true" slide-interval="2000">
+  <ion-slide>
+    <div class="box blue"><h1>BLUE</h1></div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box yellow"><h1>YELLOW</h1></div>
+  </ion-slide>
+  <ion-slide on-slide-changed="slideHasChanged(index)">
+    <div class="box pink"><h1>PINK</h1></div>
+  </ion-slide>
+</ion-slide-box>
+
+
+<!--带options属性自定义滑动块-->
+      <!--<ion-slides options="options"  slider="data.slider">
+        <ion-slide-page>
+          <div class="box blue">
+            <h1>BLUE</h1>
+          </div>
+        </ion-slide-page>
+        <ion-slide-page>
+          <div class="box yellow">
+            <h1>YELLOW</h1>
+          </div>
+        </ion-slide-page>
+        <ion-slide-page>
+          <div class="box pink">
+            <h1>PINK</h1>
+          </div>
+        </ion-slide-page>
+      </ion-slides>-->
+
+
+    </ion-content>
+
+</ion-view>

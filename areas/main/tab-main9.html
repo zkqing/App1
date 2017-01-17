@@ -1,0 +1,130 @@
+<ion-view hide-nav-bar='true'>
+
+  <ion-content scroll='true'>
+
+    <!--滑块控件-->
+    <div class="item range">
+      <i class="icon ion-volume-low"></i>
+      <input type="range" name="volume">
+      <i class="icon ion-volume-high"></i>
+    </div>
+
+    <!--滑块控件列表-->
+    <div class="list">
+      <div class="item range range-positive">      <!--CSS修改range-positive的样式-->
+        <i class="icon ion-ios-sunny-outline"></i>
+        <input type="range" name="volume" min="0" max="100" value="33">
+        <i class="icon ion-ios-sunny"></i>
+      </div>
+      <div class="item range range-balanced">
+        <i class="icon ion-ios-minus-outline"></i>
+        <input type="range" name="volume" min="0" max="100" value="33">
+        <i class="icon ion-ios-plus"></i>
+      </div>
+      <div class="item range range-assertive">
+        <i class="icon ion-ios-lightbulb-outline"></i>
+        <input type="range" name="volume" min="0" max="100" value="33">
+        <i class="icon ion-ios-lightbulb"></i>
+      </div>
+    </div>
+
+
+    <!--选择器-->
+    <div class="list">
+      <label class="item item-input item-select">
+    <div class="input-label">
+      名字
+    </div>
+    <select>
+      <option>张三</option>
+      <option selected>李四</option>   //selected当前的选择状态
+      <option>王麻子</option>
+    </select>
+  </label>
+      <label class="item item-input item-select">
+    <div class="input-label">
+      妻妾
+    </div>
+    <select>
+      <option>西施</option>
+      <option>杨贵妃</option> 
+      <option selected>王昭君</option>
+      <option>貂蝉</option>
+    </select>
+  </label>
+      <label class="item item-input item-select">
+    <div class="input-label">
+      爱好
+    </div>
+    <select>
+      <option>高的</option>
+      <option>胖的</option> 
+      <option selected>瘦的</option>
+      <option>矮的</option>
+      <option>活泼</option>
+      <option>温柔</option>
+      <option>可爱</option>
+    </select>
+  </label>
+    </div></br></br></br>
+
+    <!--纯文字选项卡-->
+    <!--<div class="tabs tabs-assertive">
+      <a class="tab-item">
+    主页
+  </a>
+      <a class="tab-item">
+    收藏
+  </a>
+      <a class="tab-item">
+    设置
+  </a>
+    </div>-->
+
+    <!--纯图标选项卡-->
+    <!--<div class="tabs tabs-icon-only">
+  <a class="tab-item">
+    <i class="icon ion-home"></i>
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-star"></i>
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-gear-a"></i>
+  </a>
+</div>-->
+
+<!--顶部图标+文字选项卡-->
+<!--<div class="tabs tabs-icon-top">
+  <a class="tab-item">
+    <i class="icon ion-home"></i>
+    Home
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-star"></i>
+    Favorites
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-gear-a"></i>
+    Settings
+  </a>
+</div>-->
+
+<!--左侧图标+文字选项卡-->
+<div class="tabs tabs-icon-left">
+  <a class="tab-item">
+    <i class="icon ion-home"></i>
+    Home
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-star"></i>
+    Favorites
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-gear-a"></i>
+    Settings
+  </a>
+</div>
+  </ion-content>
+
+</ion-view>

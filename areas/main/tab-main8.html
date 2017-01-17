@@ -1,0 +1,111 @@
+<ion-view hide-nav-bar='true'>
+
+  <ion-content scroll='true'>
+    <!--提交表单-->
+    <div class="list">
+
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+      <input type="text" placeholder="Email">
+    </label>
+        <button class="button button-small">
+      Submit
+    </button>
+      </div>
+
+    </div>
+
+    <!--搜索表单-->
+    <div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search">
+  </label>
+</div>
+
+    <!--搜索表单2-->
+    <div class="item item-input-inset">
+      <label class="item item-input col-80">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search"> 
+  </label>&nbsp;&nbsp;
+   <button class="button button-light">
+    取消
+  </button>
+   
+    </div>
+
+    <!--搜索表单3-->
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input type="search" placeholder="Search">
+  </label>
+      <button class="button button-light">
+    取消
+  </button>
+    </div>
+
+
+    <!--切换开关-->
+    <label class="toggle">
+   <input type="checkbox">
+   <div class="track">
+     <div class="handle"></div>
+   </div>
+</label>
+
+<!--切换开关列表-->
+<ul class="list">
+
+  <li class="item item-toggle">
+     HTML5
+     <label class="toggle toggle-assertive">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+  <li class="item item-toggle">
+     JAVA
+     <label class="toggle toggle-calm">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+  <li class="item item-toggle">
+     CSS
+     <label class="toggle toggle-energized">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+</ul>
+
+<!--单选框-->
+<ion-list>
+  <ion-radio ng-model="choice" ng-value="'A'">Choose A</ion-radio>
+  <ion-radio ng-model="choice" ng-value="'B'">Choose B</ion-radio>
+  <ion-radio ng-model="C" ng-value="">Choose C</ion-radio>
+  <ion-radio >Choose D</ion-radio>
+</ion-list>
+
+  <!--复选框-->
+  <ion-list>
+  
+  <ion-checkbox ng-model="R">Red</ion-checkbox>
+  <ion-checkbox class="item  item-checkbox checkbox-energized" ng-model="filter.yellow">Yellow</ion-checkbox>
+  <ion-checkbox ng-model="ok">Pink</ion-checkbox>     <!--使用控制器里的同一个值有影响-->
+  <ion-checkbox ng-model="ok">选中的</ion-checkbox>    <!--使用控制器里的同一个值有影响-->
+  <ion-checkbox >没选中</ion-checkbox>
+
+</ion-list>
+
+  </ion-content>
+
+</ion-view>

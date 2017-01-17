@@ -1,0 +1,27 @@
+<ion-view hide-nav-bar='true'>
+
+  <ion-content scroll="true">
+
+    <!--模态框-->
+    <button class="button button-assertive" ng-click="openModal()">
+  打开
+</button>
+
+    <script id="my-modal.html" type="text/ng-template">
+    <div class="modal">
+      <ion-header-bar>
+        <h1 class="title">我的模态框</h1>
+          <button class="button button-assertive" ng-click="closeModal()">取消</button>
+      </ion-header-bar>
+      <ion-content>
+        Hello!
+      </ion-content>
+    </div>
+</script>
+
+
+
+
+</ion-content>
+
+</ion-view>
